@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+	<header>
+		<title>Lex with js</title>
+		<link rel="stylesheet" type="text/css" media="screen" href="main.css">
+		<!-- <link rel="script" type="text/js" media="screen" href="main.js"> -->
+	</header>
+
+	<body>
+		<style>
+			
+.inputs {
+	list-style-type: none;
+	display: inline-block;
+	width: 200px;
+	border: 3px solid red;
+	padding: 20px;
+}
+.inputs input{
+	/* position: relative; */
+	width: 40px;
+}
+#F, #S {
+	width: 20px;
+}
+/* .formula {
+	width: 100px;
+} */
+		</style>
+		<h1>This is where I make my homework stuff.</h1>
+		<h2><a href="index.html"><i>Fuck go back</i></a></h2>
+		<hr>
+		<div style="text-align: center">
+			<h3>Physics</h3>
+			
+		</div>
+		<div class="row">
+			<div class="column">
+				<div>Work and Energy</div>
+				<div class="formula">W = F x S</div>
+				<input type="number" name="num" placeholder="F" id="F"> x 
+				<input type="number" name="num" placeholder="S" id="S">
+					 = 
+					<div id="W" onclick="work()">W</div>
+				<!-- <form class="inputs">
+					<ul>
+						<li><input type="text" placeholder="F" id="F"></li>
+						<li><input type="text" placeholder="S" id="S"></li>
+						<li><div> = </div></li>
+						<li><output></output></li>
+					</ul>
+					
+					<input type="number" name="num" placeholder="W" id="W">
+				</from> -->
+				<input type="button" onclick="work()" value="Answer">
+			</div>
+			<div class="column">
+				<div>Work and Energy</div>
+				<div class="formula"></div>
+			</div>
+			<div class="column">
+				<div>Radio activity</div>
+				<div class="formula"></div>
+			</div>
+		</div>
+		<hr>
+
+	</body>
+</html>

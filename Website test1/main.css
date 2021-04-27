@@ -1,0 +1,292 @@
+@import "compass/css3";
+/* * {
+    box-sizing: border-box;
+} */
+html {
+    text-align: center;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    /* font-family: 'Oswald', sans-serif; */
+    /* font-family: 'monospace', sans-serif; */
+}
+
+body {
+	margin: 0;  
+    font-family: Verdana, Tahoma, sans-serif;
+    /* font-family: 'monospace', sans-serif; */
+}
+
+@media only screen and (max-width: 500px) {
+    nav {
+      text-align: center;
+      visibility: hidden;
+      box-shadow: none;
+      height: 50px;
+    }
+    nav ul li {
+      margin: 20px;
+    }
+    .project1 {
+      margin: 40px 0;
+    }
+}
+
+/* Navigation start */
+#navig {
+    position: fixed;
+    z-index: 2;
+    top: 0px;
+    /* padding: 10px; */
+    padding-bottom: 10px;
+    /* right: 30px; */
+    /* height: 120px; */
+    width: 100%;
+    margin: auto;
+    /* display: inline-block; */
+    /* overflow: visible; */
+    /* background-color: rgb(43, 43, 43); */
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    /* border-bottom: 3px solid rgba(0, 0, 0, 0.603); */
+    border-bottom: 3px solid rgba(255, 0, 0, 0.7);
+}
+#navig ul {
+    list-style-type: none;
+    padding-right: 20px;
+    /* padding: 10px 10px; */
+    text-align: right;
+}
+#navig li {
+    float: right;
+    /* display: inline-block; */
+    /* padding: 4px 4px; */
+}
+#navig a {
+    color: white;
+    padding: 0px 10px;
+    display: inline-block;
+    padding: 10px;
+    /* font-family: 'Fira Sans Condensed', sans-serif; */
+}
+#navig .home {
+    position: relative;
+    /* top: 20px;
+    left: 20px; */
+    /* text-align: left; */
+    /* float: left; */
+    /* padding: 4px 4px; */
+
+}
+/* Navigation */
+
+/* Intro start */
+#home {
+    /* background-image: url(https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2F4.bp.blogspot.com%2F-XfPq1Hnq9LA%2FVagG7imh20I%2FAAAAAAABscw%2Fr2HYc_Qh7uM%2Fs0%2FNASA_Discovery_Shuttle_uhd.jpg&f=1); */
+    /* background-size: cover;
+    background-position: center; */
+    filter: hue-rotate(-90deg);
+    margin-bottom: 60px;
+    height: 100vh;
+    /* height: 100%; */
+    z-index: 0;
+}
+.intro {
+    z-index: 1;
+    /* background-image: url(https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2F4.bp.blogspot.com%2F-XfPq1Hnq9LA%2FVagG7imh20I%2FAAAAAAABscw%2Fr2HYc_Qh7uM%2Fs0%2FNASA_Discovery_Shuttle_uhd.jpg&f=1); */
+    background-size: cover;
+    background-position: center;
+    /* background-image: url(https://wallpapersite.com/images/wallpapers/saturn-2880x1800-planet-cassini-nasa-rings-of-4k-10149.jpg); */
+    /* background-image: url(https://wallpapercave.com/wp/4hVHDzO.jpg); */
+    /* height: 100vh; */
+    filter: hue-rotate(90deg);
+}
+.intro h1 {
+    z-index: 2;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: 40vh;
+    margin: auto;
+    padding: 5px 0px;
+    width: 200px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    box-shadow: 10px 10px 20px 3px rgba(0,0,0,0.5), 3px 6px 6px 3px rgba(0,0,0,0.5);
+    border: 3px solid rgba(0, 0, 0, 0.603);
+    border-bottom: 3px solid rgba(255, 0, 0, 0.7);
+    animation: fadeIn 2s forwards;
+}
+.intro h3 {
+    z-index: 3;
+    position: relative;
+    top: 43vh;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: auto;
+    width: 180px;
+    text-align: left;
+    font-size: 17px;
+    padding: 15px 0px 15px 20px;
+    /* filter: hue-rotate(180deg); */
+    border: 3px solid rgba(0, 0, 0, 0.603);
+    box-shadow: 10px 10px 20px 3px rgba(0,0,0,0.5), 3px 6px 6px 3px rgba(0,0,0,0.5);
+    animation: fadeIn 2s forwards;
+}
+.intro #read-more {
+    z-index: 3;
+    position: relative;
+    /* position: static; */
+    text-align: center;
+    /* padding: 15px 0px 15px 20px; */
+    padding: 20px;
+    /* top: 30vh; */
+    bottom: 30vh;
+    margin-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    filter: hue-rotate(-90deg);
+    color: white;
+    /* background-color: rgba(255, 0, 0, 0.7); */
+    /* width: 100px; */
+}
+@keyframes fadeIn {
+    0% {opacity: 0;filter: blur(100px);}
+    100% {opacity: 1; filter: blur(0px);}
+}
+/* Intro end */
+
+
+
+/* Projects start */
+.projects {
+    color: white;
+    background-image: url(https://wallpapersite.com/images/wallpapers/saturn-2880x1800-planet-cassini-nasa-rings-of-4k-10149.jpg);
+    background-size: cover;
+    background-position: center;
+    /* padding-top: 60px; */
+    /* padding: 80px 0px; */
+    /* margin-top: -60px; */
+    z-index: 0;
+}
+.project-header {
+    position: relative;
+    padding: 30px;
+    margin: 40px auto;
+    width: 200px;
+    box-shadow: 10px 10px 20px 3px rgba(0,0,0,0.5), 3px 6px 6px 3px rgba(0,0,0,0.5);
+    /* border: 3px solid rgba(0, 0, 0, 0.603); */
+    border: 3px solid red;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#projects {
+    background-image: url(https://wallpapersite.com/images/wallpapers/saturn-2880x1800-planet-cassini-nasa-rings-of-4k-10149.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 60px;
+    /* margin-top: -60px; */
+}
+#projects a {
+    /* color: white; */
+    background-size: cover; 
+    background-position: center;
+}
+.project-header {
+    /* margin-top: 50px; */
+    color: white;
+}
+.project {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    overflow: hidden;
+    border: 3px solid rgba(0, 0, 0, 0.603);
+    border: 3px solid white;
+    color: white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    height: 180px;
+    width: 240px;
+    margin: 25px 25px;
+    padding: 30px 30px 0px 30px;
+    /* animation: fadeIn 2s ease-in-out; */
+    /* transform: rotateX(1deg) rotateY(80deg) rotateZ(5deg);  */
+}
+.project p {
+    text-align: left;
+}
+.project:hover {
+    animation: up 1s forwards;
+}
+@keyframes up {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+.checkbox {
+    display: block;
+    width: 240px;
+    height: 180px;
+    position: absolute;
+    opacity: 0;
+}
+.checkbox:checked ~  {
+    opacity: 1;
+}
+/* Projects end */
+
+
+a {
+    margin: auto;
+    color: red;
+    text-decoration: none;
+}
+a:hover {
+    /* color: rgb(0, 0, 0); */
+    animation: hoverlink 1s forwards;
+}
+@keyframes hoverlink {
+    0% {background-color: transparent;}
+    100% {background-color: rgb(172, 0, 0);}
+}
+
+/* table {
+	width: 100%;
+	text-align: center;
+    padding-left: 15%;
+} */
+
+input:checked {
+    animation: changecolor 0.5s forwards;
+}
+@keyframes changecolor {
+    50% {
+        /* color: darkslateblue; */
+        transform: scale(1.25);
+    }
+}
+/* Index end */
+
+/* Math start */
+.column {
+    float: left;
+    width: 33.33%;
+}
+  
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Math end */
+footer {
+	width: 93%;
+	font-size: 16px;
+	text-align: center;
+	/* color: #fff; */
+	padding: 30px;
+	/* right: 10px;
+	bottom: 4px; */
+}

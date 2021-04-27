@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+
+	<!-- Header start -->
+	<header>
+		<title>Lex Klaassen</title>
+    	<meta charset="utf-8" />
+    	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+    	<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+		<link href="https://fonts.googleapis.com/css?family=Black+Ops+One|EB+Garamond|Fira+Sans+Condensed|Work+Sans" rel="stylesheet">
+		<script src="main.js"></script>
+	</header>
+	<!-- Header end -->
+
+	<!-- Body start-->
+	<body>
+
+		<!-- Nav start -->
+		<nav id="navig">
+			<ul>
+				<a href="#home" class="home" style="float: left;">Lex</a>
+				<li><a href="#about-me">About</a></li>
+				<li class="dropdown">
+					<a href="#projects" onmousemove="dropdown()">Projects</a>
+					<div class="dropdown-content" style='display:none;'>
+						<a href="#">Javascript Math</a>
+						<a href="#">Calculations</a>
+						<a href="#">Coding</a>
+						<a href="#">Blah</a>
+					</div>
+				</li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+		<!-- Nav end -->
+		
+		<!-- Intro start -->
+		<div class="intro" style="background-image: url(https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2F4.bp.blogspot.com%2F-XfPq1Hnq9LA%2FVagG7imh20I%2FAAAAAAABscw%2Fr2HYc_Qh7uM%2Fs0%2FNASA_Discovery_Shuttle_uhd.jpg&f=1);">
+		<!-- <div class="intro"> -->
+			<div id="home">
+				<h1><span style="color: red;">L</span>ex Klaassen</h1>
+				<h3><strong style="color: red;">L</strong>earning stuff<br><strong style="color: red;">M</strong>aking stuff<br><strong style="color: red;">B</strong>reaking stuff</h3>
+			</div>
+			<a href="#projects" id="read-more">Read More</a>
+		</div>
+		<!-- Intro end -->
+
+		<!-- Projects start -->
+		<div id="projects">
+			<div class="project-header">
+				<h2>Projects</h2>
+				<p>Here, <a href="math.html" target="_blank">follow me</a> to look at some math and other calculations that I have done over the years.</p>
+			</div>
+
+			<!-- <a href="#" class="project" style="background-image: url(https://avante.biz/wp-content/uploads/Math-Pictures-Wallpapers/Math-Pictures-Wallpapers-021.jpg);"> -->
+			<a href="#" class="project">
+				<div class="project-title">Calculations</div>
+				<p>This is the part where I talk about Math and stuff. Mostly because it interesses me and keeps on blowing my mind</p>
+			</a>
+
+			<!-- <a href="#" class="project" style="background-image: url(http://getwallpapers.com/wallpaper/full/2/b/9/58301.jpg);"> -->
+			<a href="#" class="project">
+				<div class="project-title">Physics</div>
+				<p>This is the part where I talk about Physics and stuff. Mostly because it interesses me and keeps on blowing my mind</p>
+			</a>
+
+			<!-- <a href="#" class="project" style="background-image: url(https://i1.sndcdn.com/artworks-000304997247-qhmz2c-t500x500.jpg);"> -->
+			<a href="#" class="project">
+				<input type="checkbox" class="checkbox" style="visibility: hidden">
+				<div class="project-title">Testing</div>
+				<p>This is the part where I talk about Python and stuff. Mostly because it interesses me and keeps on blowing my mind</p>
+			</a>
+			<!-- <input type="checkbox" class="checkbox project" style="visibility: hidden">
+			<div class="project-title project">Testing</div>
+			<p class="project">This is the part where I talk about Python and stuff. Mostly because it interesses me and keeps on blowing my mind</p> -->
+
+			<!-- <a href="#" class="project" style="background-image: url(http://fonotekaelektrika.com/wp-content/uploads/2016/03/utopia-still2-1024x534.png);"> -->
+			<a href="#" class="project">
+				<div class="project-title">Coding</div>
+				<p>This is the part where I talk about Physics and stuff. Mostly because it interesses me and keeps on blowing my mind</p>
+			</a>
+
+		</div>
+		<!-- <img src="https://external-preview.redd.it/tTZs3JWpgu8sOgBKCj3nHgbiKyeVN36bW8sFYeTdxWc.jpg?s=f31f9769b8c2696c024a21be5d19b796beadca72" alt="Solar system"> -->
+
+		<!-- <h3>Things I do in my spare time.</h3>
+		<table id="category-toggle-table">
+			<tbody>
+				<tr>
+					<td><a href="#">Reddit</a></td>
+					<td><a href="#">Youtube</a></td>
+				</tr>
+				<tr>
+					<td><a href="#">Improv</a></td>
+					<td><a href="steam://run/730">CS:GO</a></td>
+				</tr>
+				<tr>
+					<td><a href="#">Netflix</a></td>
+					<td><a href="#">Github</a></td>
+				</tr>
+				<tr>
+					<td><a href="#">Code</a></td>
+					<td><a href="#">Learn new things</a></td>
+				</tr>
+			</tbody>
+		</table> -->
+
+		<form>
+			<label for="username">Username:</label>
+			<!-- <input type="text" id="username" name="username" placeholder="Gimme a username"> -->
+			<fieldset>
+				<legend>This is a form thingy.</legend>
+				<label><input type="checkbox">give me monay</label>
+				<br>
+				<label><input type="checkbox">do you have something</label>
+			</fieldset>
+			<button type="submit">Submit</button>
+		</form>
+		<label for="weather">Select the weather type today: </label>
+    <!-- <input type="text" placeholder="Name" required name="Name">
+    <input type="text" placeholder="Email" required name="Email">
+    <input type="text" placeholder="Message" required name="Message">
+		<button type="submit">SEND MESSAGE</button> -->
+		<div id='demo'>This is not for you</div>
+		<button onclick="showtext()">Click FAST</button>
+
+		<input type="text" id="username" name="username" placeholder="Gimme a username" onchange="username()">
+		<div class="greeting"></div>
+		
+		<p id='poem'>
+			Nano meters long,<br>
+			The waves crashing.<br>
+			Black and white decepting our eyes<br>
+			Drowning in a binary paint.<br><br>
+			Black, White, Red.<br>
+			Yellow, Green, Blue, Purple.<br>
+			Facing the rainbow in the sky.
+		</p>
+		<button onclick="Poem()">A Poem For My Sprog</button>
+
+	</body>
+	<!-- Body end -->
+
+	<!-- Footer start-->
+	<footer>
+		<label><input type="checkbox" name="unnecessairy"> Radio</label> 
+		<button>change colour</button>
+		<a href="#home">To the top</a>
+		<!-- <div class="feedbackmail">Feedback will be greatly appreciated <a href="mailto:kllex028@gmail.com">kllex028@gmail.com</a></div> -->
+		<div id="contact">Contact me pls</div>
+	</footer>
+	<!-- Footer end -->
+
+</html>
